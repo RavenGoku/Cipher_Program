@@ -129,7 +129,7 @@ int main()
 																							//when using getline is best option to clear stream before use
 						getline(cin, secret_message, '\n');                               //input secret message
 
-						for (int i = 0; i < secret_message.length(); i++)                 //for loop to encrypt message
+						for (size_t i = 0; i < secret_message.length(); i++)                 //for loop to encrypt message
 						{
 							position = alphabet.find(secret_message.at(i));
 							if (position != string::npos)
@@ -150,7 +150,7 @@ int main()
 				{
 					if (vec_encryption.size() != 0)
 					{
-						int message_num{};
+						unsigned int message_num{};
 						cout << "You've got -" << vec_encryption.size() << "- messages." << endl;
 						int i = 1; // number of secret message
 						for (auto &encrypt : vec_encryption)
@@ -301,7 +301,7 @@ int main()
 																																							//when using getline is best option to clear stream before use
 						getline(cin, secret_message, '\n');                               //input secret message
 
-						for (int i = 0; i < secret_message.length(); i++)                 //for loop to encrypt message
+						for (size_t i = 0; i < secret_message.length(); i++)                 //for loop to encrypt message
 						{
 							position = alphabet.find(secret_message.at(i));
 							if (position != string::npos)
@@ -322,7 +322,7 @@ int main()
 				{
 					if (vec_encryption.size() != 0)
 					{
-						int message_num{};
+						unsigned int message_num{};
 						cout << "Masz -" << vec_encryption.size() << "- wiadomosci." << endl;
 						int i = 1; // number of secret message
 						for (auto &encrypt : vec_encryption)
